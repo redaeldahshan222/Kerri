@@ -1,0 +1,288 @@
+:root {
+    --mainColor: #e65f78;
+  }
+  
+  body {
+    font-family: "Nunito Sans", sans-serif;
+    height: 10000px;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Montserrat", sans-serif;
+  }
+  header{
+    background-image: linear-gradient(#0000007a,#0000007e) , url('../image/header-bg.jpg');
+
+    background-position: center center;
+    background-size: cover ;
+  }
+  header h1{
+    font-size: 65px;
+  }
+  @media screen and(max-width :800px) {
+    header h1{
+      font-size: 50px;
+    }
+    
+  }
+  header h1::after{
+    content: '';
+    animation-name: header-animation;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+  }
+  @keyframes header-animation {
+    0% {content: "|";}
+    3% {content: "D|";}
+    5% {content: "De|";}
+    7% {content: "Dev|";}
+    10% {content: "Deve|";}
+    13% {content: "Devel|";}
+    15% {content: "Develo|";}
+    17% {content: "Develop|";}
+    20% {content: "Developm|";}
+    24% {content: "Developme|";}
+    25% {content: "Developmen|";}
+    27% {content: "Development|";}
+    30% {content: "Development|";}
+    32% {content: "Developmen|";}
+    35% {content: "Developme|";}
+    37% {content: "Develop|";}
+    40% {content: "Develo|";}
+    42% {content: "Devel|";}
+    45% {content: "Deve|";}
+    47% {content: "Dev|";}
+    50% {content: "De|";}
+    52% {content: "Des|";}
+    55% {content: "Desi|";}
+    57% {content: "Desig|";}
+    60% {content: "Design|";}
+    62% {content: "Designe|";}
+    65% {content: "Designer|";}
+    67% {content: "Designer|";}
+    70% {content: "Designe|";}
+    72% {content: "Design|";}
+    75% {content: "Desig|";}
+    77% {content: "Desi|";}
+    80% {content: "Des|";}
+    82% {content: "De|";}
+    85% {content: "Dev|";}
+    87% {content: "Deve|";}
+    90% {content: "Devel|";}
+    92% {content: "Develo|";}
+    95% {content: "Develop|";}
+    97% {content: "Develope|";}
+    100% {content: "Developer|";}
+  }
+
+  header .btn-download{
+    border:  2px solid white;
+    color: white;
+  }
+  header .btn-download:hover{
+    background-color: white;
+    color: black;
+  }
+  .sititing{
+    top: 30%;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 0 10px 10px 0 ;
+    background-color: var(--mainColor);
+  
+  }
+  .sheap{
+    width: 40px;
+    height: 80px;
+    border: 2px solid #fff;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 20px;
+    animation-name: move;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  @keyframes move{
+    0%{
+        bottom: 20px;
+
+    }
+    25%{
+        bottom: 80px;
+
+    }
+    50%{
+        bottom: 30px;
+
+    }
+    75%{
+        bottom: 80px;
+
+    }
+    100%{
+        bottom: 20px;
+    }
+  }
+  .sheap::after{
+    content: '';
+    width: 4px;
+    height: 8px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+background-color: white;
+    transform: translateX(-50%);
+
+  }
+  .navbar-nav .nav-link.active{
+    color: var(--mainColor);
+    font-weight: bold;
+  }
+  .nav-link:hover{
+    color: var(--mainColor);
+  }
+  .navbar-toggler{
+    border: none;
+  }
+  .navbar-toggler:focus {
+    box-shadow: 0 0 0 transparent;
+  }
+
+  /* /////////////////////////////////////// */
+  .text-pink{
+    color: var(--mainColor);
+  }
+  .about .right ul li{
+   
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid #f1f1f1;
+    transition: 1s;
+  
+  }
+  .about .right ul li:hover{
+    border: 1px solid var(--mainColor);
+  }
+  .about .right ul li i{
+    transition: .3s all;
+  }
+  .about .right ul li i:hover {
+    color: var(--mainColor);
+  }
+  @media screen and (max-width : 900px) {
+    .about h2{
+      margin-top: 25px;
+    }
+    
+  }
+/* ///////////////////////////// */
+.client{
+  background-color: #f1f1f1;
+}
+.client .myslider .test{
+  font-style: italic;
+  text-align: center;
+}
+.carousel-indicators {
+  bottom: -30px;
+}
+
+.carousel-indicators [data-bs-target]{
+  height: 7px;
+  background-color: var(--mainColor);
+  border-radius: 40%;
+  
+}
+.nav-tabs{
+  border: none;
+  display: flex;
+  justify-content: center;
+  margin: 40px;
+}
+.nav-tabs .nav-link.active{
+  color: white;
+  background-color:var(--mainColor);
+  border-color: transparent;
+  border-radius: 20px;
+
+ 
+}
+.nav-tabs .nav-link{
+  color: #333;
+}
+.nav-tabs .nav-link:hover{
+  border-color: transparent;
+}
+.portfolio .item .layer{
+   left: 0;
+   top: 100%;
+   width: 100%;
+   height: 100%;
+
+   transition:all .3s;
+   z-index: 4;
+}
+.portfolio .item:hover .layer{
+  top: 0;
+}
+.portfolio .item::after{
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color:#000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: all.3s;
+}
+.portfolio .item:hover::after{
+  opacity: .7;
+}
+.portfolio .item img{
+  transition: all .3s;
+}
+.portfolio .item:hover img{
+  transform: scale(1.1);
+}
+.blog{
+  background-color: #f1f1f1;
+}
+/* //////////////////////////// */
+.frist-two input{
+  width: 48%;
+
+}
+.btn-form, .btn-form:hover{
+  background-color: var(--mainColor);
+  color: #f1f1f1;
+  margin-top: 10px;
+}
+
+
+
+.form-control:focus {
+    color: var(--bs-body-color);
+    background-color: var(--bs-body-bg);
+    border-color: var(--mainColor);
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem var(--mainColor) ;
+}
+html{
+  scroll-padding-top: 62px;
+}
